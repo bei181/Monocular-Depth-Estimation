@@ -71,6 +71,9 @@
 **[paper](https://arxiv.org/pdf/2110.05885.pdf)**  
 为了缓解边缘模糊问题，设计了一个场景理解模块来学习具有低层和高层特征的全局信息，以及一个尺度变换模块将全局信息转换为不同的尺度。作者还提出了一个边界感知深度损失函数
 
+**[18]ManyDepth-The Temporal Opportunist: Self-Supervised Multi-Frame Monocular Depth**  
+**[paper](https://arxiv.org/pdf/2104.14540.pdf) | [code](https://github.com/nianticlabs/manydepth)**  
+提出了一种基于深度端到端cost volume的方法，以及一种新颖的一致性损失，鼓励网络在被认为不可靠时忽略cost volume，例如在移动物体的情况下，以及处理静态相机的增强方案。
 
 
 
