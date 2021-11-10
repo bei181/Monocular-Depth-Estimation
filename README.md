@@ -48,5 +48,6 @@
 内容：提出一种仅从单目图像序列中学习来隐式估计针孔相机内参以及深度和姿态的方法。通过利用有效的子像素卷积，获得了高保真深度估计，网络中还加入了像素级不确定性估计。
  
 **[12] Self-Supervised Monocular Scene Decomposition and Depth Estimation**  
-**[paper](https://arxiv.org/pdf/2110.11275.pdf)**  
+**[paper](https://arxiv.org/pdf/2110.11275.pdf)**   
+内容：提出MonoDepthSeg, 在不使用任何真实标签的情况下联合估计深度并从单目视频中分割移动对象。 将场景分解为固定数量的component，其中每个组件对应于图像上的一个区域，并且拥有其自身的变换矩阵，表示其运动。
 
