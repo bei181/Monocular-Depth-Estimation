@@ -51,3 +51,27 @@
 **[paper](https://arxiv.org/pdf/2110.11275.pdf)**   
 内容：提出MonoDepthSeg, 在不使用任何真实标签的情况下联合估计深度并从单目视频中分割移动对象。 将场景分解为固定数量的component，其中每个组件对应于图像上的一个区域，并且拥有其自身的变换矩阵，表示其运动。
 
+**[13] Self-Supervised Monocular Depth Estimation with Internal Feature Fusion**  
+**[paper](https://arxiv.org/pdf/2110.09482.pdf)**   
+基于成熟的语义分割网络 HRNet，提出了一种新颖的深度估计网络 DIFFNet，它可以在下采样和上采样过程中利用语义信息，并且采用了特征融合和注意力机制。
+
+**[14] Residual-Guided Learning Representation for Self-supervised Monocular Depth Estimation**  
+**[paper](https://arxiv.org/pdf/2111.04310.pdf)**   
+对Featdepth改进，提出了一个新的损失Residual-Guidance Loss。作者认为，autoencoder和DepthNet是来自不同的loss，并没有完全发掘DepthNet网络需要的的特征。所以，作者提出这个loss，可以让DepthNet引导autoencoder一起学习，效果略微有提升。
+
+**[15] Attention meets Geometry: Geometry Guided Spatial-Temporal Attention for Consistent Self-Supervised Monocular Depth Estimation**  
+**[paper](https://arxiv.org/pdf/2110.08192.pdf)**    
+提出了一个空间注意力模块，将粗略的深度预测与聚合局部几何信息相关联，以及一种新颖的时间注意力机制，进一步在全局上下文中处理连续图像中的局部几何信息。
+
+**[16] PLNet: Plane and Line Priors for Unsupervised Indoor Depth Estimation**  
+**[paper](https://arxiv.org/pdf/2110.05839.pdf) | [code](https://github.com/HalleyJiang/PLNet)**   
+室内场景充满了特定的结构，例如平面和线，有助于指导无监督的深度估计学习。本文提出了利用平面和线先验来增强深度估计的 PLNet，使用局部平面系数表示场景几何并对表示施加平滑约束，以及，随机选择一些可能共面或共线的点集来强制执行平面和线性一致性。
+
+**[17]Monocular Depth Estimation with Sharp Boundary**  
+**[paper](https://arxiv.org/pdf/2110.05885.pdf)**  
+为了缓解边缘模糊问题，设计了一个场景理解模块来学习具有低层和高层特征的全局信息，以及一个尺度变换模块将全局信息转换为不同的尺度。作者还提出了一个边界感知深度损失函数
+
+
+
+
+
