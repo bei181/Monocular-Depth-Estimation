@@ -75,6 +75,36 @@
 **[paper](https://arxiv.org/pdf/2104.14540.pdf) | [code](https://github.com/nianticlabs/manydepth)**  
 提出了一种基于深度端到端cost volume的方法，以及一种新颖的一致性损失，鼓励网络在被认为不可靠时忽略cost volume，例如在移动物体的情况下，以及处理静态相机的增强方案。
 
+**[19]Adversarial Domain Feature Adaptation for Bronchoscopic Depth Estimation**  
+**[paper](https://arxiv.org/pdf/2109.11798.pdf)**  
+医疗图像上的应用，支气管镜中的深度估计。利用合成数据先有监督地训练网络，然后用对抗网络进行domain adaptation迁移到真实数据上，也属于无监督的单目深度估计方法。
+
+**[20]Excavating the Potential Capacity of Self-Supervised Monocular Depth Estimation**  
+**[paper](https://arxiv.org/pdf/2109.12484.pdf) | [code](https://github.com/prstrive/EPCDepth)**  
+在不增加成本的情况下挖掘自监督单目深度估计的潜在能力，提出了：
+(1)一种称为数据嫁接(data grafting)的新型数据增强方法，迫使模型探索更多线索来推断垂直图像位置之外的深度，
+(2)探索性自蒸馏损失，提出一种新的后处理方法生成自蒸馏标签监督——选择性后处
+(3)全尺寸网络，旨在赋予编码器深度估计任务的专业化并增强模型的表示能力
+
+**[21]Weakly-Supervised Monocular Depth Estimation with Resolution-Mismatched Data**  
+**[paper](https://arxiv.org/pdf/2109.11573.pdf)**  
+提出了一种新的弱监督框架来训练单目深度估计网络以生成的高分辨率深度图，即输入是 HR彩色图像，而真值是低分辨率(LR)深度图。所提出的弱监督框架由共享权重单目深度估计网络和用于蒸馏的深度重建网络组成
+
+**[22]Survey on Semantic Stereo Matching / Semantic Depth Estimation**  
+**[paper](https://arxiv.org/pdf/2109.10123.pdf)**    
+利用语义信息的立体匹配或者深度估计的一篇综述性论文
+
+**[23]Monocular Depth Estimation Using Laplacian Pyramid-Based Depth Residuals (LapDepth)**  
+**[code](https://github.com/tjqansthd/LapDepth-release)**  
+目前KITTI有监督单目深度估计排行榜排第二，但没找到论文，github上有代码和视频讲解
+
+**[24]Improving 360◦ Monocular Depth Estimation via Non-local Dense Prediction Transformer and Joint Supervised and Self-supervised Learning**   
+**[paper](https://arxiv.org/pdf/2109.10563.pdf)**  
+提出了一种通过结合有监督学习和自监督学习来实现的联合学习方案。每个学习的弱点得到补偿，从而导致更准确的深度估计。还提出了一个非局部融合块，它在重建深度时保留了视觉Transformer编码的全局信息。
+
+**[25]On the Sins of Image Synthesis Loss for Self-supervised Depth Estimation**   
+**[paper](https://arxiv.org/pdf/2109.06163.pdf)**  
+提出了一个问题，但没有解决。作者认为图像合成的改进不需要深度估计的改进，相反，优化图像合成可能会导致主要预测目标——深度估计的性能出现分歧。论文将这种发散现象归因于源自数据的偶然不确定性。
 
 
 
